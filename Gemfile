@@ -41,6 +41,25 @@ group :development, :test do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+   # Rspec lets you write BDD style tests
+  gem 'rspec-rails'
+  # The its method is used to specify the expected value of an attribute
+  gem 'rspec-its'
+  # FactoryGirl lets you create factories which are more robust than fixtures
+  gem 'factory_girl_rails'
+  # Faker creates fake data to be used in tests
+  gem 'faker' 
+  # Should-matchers adds extra matchers to rspec
+  gem 'shoulda-matchers'
+end
+
+group :test do
+  # Capybara allows easy integration tests
+  gem 'capybara'
+  # Guard runs tests automatically when changes are detected
+  gem 'guard-rspec'
+  # Launcy opens web browser on failed integration specs to show what's being rendered
+  gem 'launchy'
 end
 
 group :production do
